@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Comfortaa';
+}
+
+.container {
+    margin: 0px auto;
+    width: 60%;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    background-image: url('images/chef-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 90px 0;
+}
+
+.company_name {
+    font-size: 60px;
+}
+
+.company_title {
+    font-weight: 600;
+}
+
+nav {
+    width: 90%;
+    margin: 50px auto;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 20px 40px;
+    transition: background-color .3s;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .8);
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.retsept-list {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.retsept-item {
+    text-align: left;
+    width: 30%;
+    max-height: 600px;
+    margin: 10px 15px;
+    padding: 10px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.retsept-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.retsept-link {
+    text-decoration: none;
+    background-color: #f0932b;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.retsept-title-link {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.retsept-subtitle {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.retsept-title-link:hover {
+    color: #ff7979;
+}
+
+.bg-red {
+    background: #ff7979;
+}
+
+.bg-blue {
+    background: #7ed6df;
+}
+
+.bg-orange {
+    background: #f0932b;
+}
+
+.bg-red:hover {
+    background: rgba(255, 121, 121, .5);
+}
+
+.bg-blue:hover {
+    background: rgba(124, 213, 222, .5);
+}
+
+.bg-orange:hover {
+    background: rgba(240, 147, 43, .5);
+}
+
+.all-retsepts {
+    width: 100%;
+    height: 100px;
+}
+
+.all-retsepts-btn {
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid #7ed6df;
+    color: #7ed6df;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .1s;
+}
+.all-retsepts-btn:hover {
+    color: white;
+    background-color: #7ed6df;
+}
+
+footer {
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+form {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+    color: #fff;
+}
+.email {
+    width: 60%;
+    height: 40px;
+    padding: 4px 5px;
+}
+.submit {
+    width: 20%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: red;
+    color: white;
+}
+footer h3 {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .retsept-item {
+        width: 90%;
+    }
+    form {
+        padding-top: 5;
+        width: 100%;
+    }
+    .all-retsepts-btn {
+        margin-top: 20px;
+        width: 70%;
+    }
+    .email {
+        width: 90%;
+        padding: 4px 5px;
+    }
+    .submit {
+        width: 80%;
+        margin: 10px;
+    }
+    footer h3 {
+        font-size: 9px;
+        margin: 0;
+    }
+    footer p {
+        width: 100%;
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .container {
+        width: 100%;
+    }
+    .retsept-list img {
+        height: 300px;
+    }
+    .email {
+        padding: 4px 5px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .retsept-item {
+        width: 90%;
+    }
+    form {
+        padding-top: 5;
+        width: 100%;
+    }
+    .all-retsepts-btn {
+        margin-top: 20px;
+        width: 70%;
+    }
+    .email {
+        width: 90%;
+        padding: 4px 5px;
+    }
+    .submit {
+        width: 80%;
+        margin: 10px;
+    }
+    footer h3 {
+        font-size: 9px;
+        margin: 0;
+    }
+    footer p {
+        width: 100%;
+        font-size: 9px;
+    }
+}
